@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Beige &amp; Co — Online Store</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-cart" viewBox="0 0 24 24">
+      <path
+        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+    </symbol>
+    <symbol id="i-heartf" viewBox="0 0 24 24">
+      <path
+        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24">
+      <path
+        d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
+    </symbol>
+    <symbol id="i-ship" viewBox="0 0 24 24">
+      <path
+        d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+    </symbol>
+    <symbol id="i-ret" viewBox="0 0 24 24">
+      <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" />
+    </symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24">
+      <path
+        d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+    </symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24">
+      <path
+        d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z" />
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+    </symbol>
+    <symbol id="i-back" viewBox="0 0 24 24">
+      <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+    </symbol>
+    <symbol id="i-chevl" viewBox="0 0 24 24">
+      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+    </symbol>
+    <symbol id="i-chevr" viewBox="0 0 24 24">
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+    </symbol>
+  </svg>
+  <header class="top"><a href="#home" class="logo"
+      onclick="event.preventDefault();goSec('top')">Beige<span>&amp;</span>Co</a>
+    <nav class="links" id="nav"><a href="#home" data-s="top">Home</a><a href="#home" data-s="featured">Featured</a><a
+        href="#home" data-s="categories">Categories</a><a href="#home" data-s="why">Why Us</a><a href="#home"
+        data-s="reviews">Reviews</a><a href="#home" data-s="news">Newsletter</a></nav>
+    <div class="act"><a href="#cart" class="cartl"><svg class="ic">
+          <use href="#i-cart" />
+        </svg> <b id="cc">0</b></a><a href="#login" id="acct" class="acct">Login</a><button class="burger" id="burger"
+        aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button></div>
+  </header>
+  <section class="view" id="v-home">
+    <div class="hero">
+      <div class="hx">
+        <div class="eyebrow">New Season</div>
+        <h1>Timeless essentials in warm neutrals</h1>
+        <p>Bags, heels, audio, cameras and more, chosen in soft colors for everyday life. Free shipping on every order.
+        </p><a class="btn" href="#home" onclick="event.preventDefault();sc('featured')">Shop now</a><a class="btn ghost"
+          href="#home" onclick="event.preventDefault();sc('categories')">Browse categories</a>
+      </div>
+      <div class="cl" id="cl"></div>
+    </div>
+    <div class="wrap" id="featured">
+      <div class="eyebrow">Our Collection</div>
+      <h1>Featured Products</h1>
+      <div class="sub">Explore our most popular items loved by customers</div>
+      <div class="stage" id="stage"><button class="nav l" id="prev" aria-label="Previous"><svg class="ic">
+            <use href="#i-chevl" />
+          </svg></button>
+        <div class="track" id="track"></div><button class="nav r" id="next" aria-label="Next"><svg class="ic">
+            <use href="#i-chevr" />
+          </svg></button>
+      </div>
+      <div class="pager" id="pager"></div>
+    </div>
+    <div class="sec" id="categories">
+      <div class="eyebrow">Browse</div>
+      <h2>Shop by Category</h2>
+      <div class="cats" id="cats"></div>
+    </div>
+    <div class="sec" id="why">
+      <div class="eyebrow">Why Beige &amp; Co</div>
+      <h2>Shopping made easy</h2>
+      <div class="feats">
+        <div class="feat"><i><svg class="ic">
+              <use href="#i-ship" />
+            </svg></i><b>Free Shipping</b><span>On every order, delivered to your door.</span></div>
+        <div class="feat"><i><svg class="ic">
+              <use href="#i-ret" />
+            </svg></i><b>Easy Returns</b><span>30 days to change your mind.</span></div>
+        <div class="feat"><i><svg class="ic">
+              <use href="#i-lock" />
+            </svg></i><b>Secure Payment</b><span>Your details are always protected.</span></div>
+        <div class="feat"><i><svg class="ic">
+              <use href="#i-chat" />
+            </svg></i><b>Friendly Support</b><span>We reply fast, every day of the week.</span></div>
+      </div>
+    </div>
+    <div class="sec" id="reviews">
+      <div class="eyebrow">Reviews</div>
+      <h2>Loved by our customers</h2>
+      <div class="revs">
+        <div class="rev">
+          <div class="s">★★★★★</div>
+          <p>The headphones are comfortable all day and the color is exactly like the photos. Delivery was quick too.
+          </p><b>Sara M.</b>
+        </div>
+        <div class="rev">
+          <div class="s">★★★★★</div>
+          <p>Beautiful bag, great leather feel. I get compliments every time I carry it.</p><b>Nour A.</b>
+        </div>
+        <div class="rev">
+          <div class="s">★★★★☆</div>
+          <p>Lightweight shoes that go with everything. Would love a few more sizes, but I am happy.</p><b>Omar K.</b>
+        </div>
+      </div>
+    </div>
+    <div class="news" id="news">
+      <h2>Join our newsletter</h2>
+      <p>New arrivals and offers, straight to your inbox.</p>
+      <form id="nf" novalidate><input id="ne" type="email" placeholder="Your email address" aria-label="Email"><button
+          type="submit">Subscribe</button></form>
+    </div>
+  </section>
+  <section class="view page" id="v-product" hidden></section>
+  <section class="view page" id="v-cat" hidden></section>
+  <section class="view page" id="v-cart" hidden></section>
+  <section class="view page" id="v-login" hidden></section>
+  <footer>© 2026 Beige &amp; Co · Demo store<div class="credit">@2026 Created by <a href="mailto:ayia2a7med@gmail.com"
+        target="_blank" rel="noopener">Aya Ahmed</a></div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <!-- Image library: each <img> is looked up by its data-i key from script.js (i: S.key).
+       Inside <template>, so nothing downloads until the image is actually shown. -->
+  <template id="imgs">
+    <img data-i="watch" src="images/leather-handbag.webp" alt="" loading="lazy">
+    <img data-i="head" src="images/wireless-headphones.webp" alt="" loading="lazy">
+    <img data-i="cam" src="images/dslr-camera.webp" alt="" loading="lazy">
+    <img data-i="bag" src="images/travel-backpack.webp" alt="" loading="lazy">
+    <img data-i="tumbler" src="images/travel-tumbler.webp" alt="" loading="lazy">
+    <img data-i="swatch" src="images/smart-watch.webp" alt="" loading="lazy">
+    <img data-i="wallet" src="images/card-wallet.webp" alt="" loading="lazy">
+    <img data-i="pbank" src="images/power-bank.webp" alt="" loading="lazy">
+    <img data-i="shades" src="images/sunglasses.webp" alt="" loading="lazy">
+    <img data-i="hat" src="images/straw-sun-hat.webp" alt="" loading="lazy">
+    <img data-i="straw" src="images/straw-bag.webp" alt="" loading="lazy">
+    <img data-i="bg1" src="images/saddle-shoulder-bag.webp" alt="" loading="lazy">
+    <img data-i="bg2" src="images/crescent-bow-bag.webp" alt="" loading="lazy">
+    <img data-i="bg3" src="images/mini-top-handle-bag.webp" alt="" loading="lazy">
+    <img data-i="bg4" src="images/monogram-mini-bag.webp" alt="" loading="lazy">
+    <img data-i="bg5" src="images/leather-bucket-bag.webp" alt="" loading="lazy">
+    <img data-i="bg6" src="images/classic-mini-handbag.webp" alt="" loading="lazy">
+    <img data-i="bg7" src="images/pearl-shoulder-bag.webp" alt="" loading="lazy">
+    <img data-i="bg8" src="images/quilted-chain-bag.webp" alt="" loading="lazy">
+    <img data-i="bh1" src="images/mini-quilted-backpack.webp" alt="" loading="lazy">
+    <img data-i="bh2" src="images/burgundy-flap-backpack.webp" alt="" loading="lazy">
+    <img data-i="bh3" src="images/embossed-mini-backpack.webp" alt="" loading="lazy">
+    <img data-i="bh4" src="images/sage-swirl-shoulder-bag.webp" alt="" loading="lazy">
+    <img data-i="bh5" src="images/pleated-chain-bag.webp" alt="" loading="lazy">
+    <img data-i="bh6" src="images/powder-blue-hobo-bag.webp" alt="" loading="lazy">
+    <img data-i="bh7" src="images/butter-bow-bag.webp" alt="" loading="lazy">
+    <img data-i="bh8" src="images/canvas-flap-bag.webp" alt="" loading="lazy">
+    <img data-i="bh9" src="images/crescent-hobo-bag.webp" alt="" loading="lazy">
+    <img data-i="bh10" src="images/drawstring-leather-backpack.webp" alt="" loading="lazy">
+    <img data-i="bh11" src="images/ivory-buckle-backpack.webp" alt="" loading="lazy">
+    <img data-i="bh12" src="images/slate-blue-backpack.webp" alt="" loading="lazy">
+    <img data-i="bh13" src="images/tassel-flap-backpack.webp" alt="" loading="lazy">
+    <img data-i="bh14" src="images/boucle-top-handle-bag.webp" alt="" loading="lazy">
+    <img data-i="bh15" src="images/blush-crystal-mini-bag.webp" alt="" loading="lazy">
+    <img data-i="heel2" src="images/beaded-lace-heels.webp" alt="" loading="lazy">
+    <img data-i="hl1" src="images/nude-patent-slingbacks.webp" alt="" loading="lazy">
+    <img data-i="hl2" src="images/pearl-strap-pumps.webp" alt="" loading="lazy">
+    <img data-i="hl3" src="images/crystal-drop-ankle-heels.webp" alt="" loading="lazy">
+    <img data-i="hl4" src="images/crystal-bow-heels.webp" alt="" loading="lazy">
+    <img data-i="hl5" src="images/ivory-pearl-heels.webp" alt="" loading="lazy">
+    <img data-i="hl6" src="images/blush-satin-slingbacks.webp" alt="" loading="lazy">
+    <img data-i="hl7" src="images/wine-satin-pumps.webp" alt="" loading="lazy">
+    <img data-i="hl8" src="images/champagne-buckle-heels.webp" alt="" loading="lazy">
+    <img data-i="hl9" src="images/butter-satin-slingbacks.webp" alt="" loading="lazy">
+    <img data-i="hl10" src="images/tulle-bow-slingbacks.webp" alt="" loading="lazy">
+    <img data-i="hl11" src="images/pearl-bow-slingbacks.webp" alt="" loading="lazy">
+    <img data-i="hl12" src="images/glitter-tulle-pumps.webp" alt="" loading="lazy">
+    <img data-i="hl13" src="images/bridal-lace-heels.webp" alt="" loading="lazy">
+    <img data-i="hl14" src="images/mint-floral-wrap-sandals.webp" alt="" loading="lazy">
+    <img data-i="hl15" src="images/sky-blue-slingbacks.webp" alt="" loading="lazy">
+    <img data-i="hl16" src="images/blue-crystal-mesh-pumps.webp" alt="" loading="lazy">
+    <img data-i="hl17" src="images/baby-blue-slingbacks.webp" alt="" loading="lazy">
+    <img data-i="hl18" src="images/red-lace-pumps.webp" alt="" loading="lazy">
+    <img data-i="hl19" src="images/pink-bow-mules.webp" alt="" loading="lazy">
+    <img data-i="hp1" src="images/lilac-over-ear-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp2" src="images/mint-over-ear-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp3" src="images/coral-over-ear-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp4" src="images/cocoa-leather-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp5" src="images/greige-on-ear-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp6" src="images/sky-blue-studio-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp7" src="images/navy-studio-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp8" src="images/slate-blue-on-ear-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp9" src="images/butter-yellow-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp10" src="images/bronze-gold-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp11" src="images/violet-pop-on-ear-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp12" src="images/mint-teal-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp13" src="images/sand-rose-headphones.webp" alt="" loading="lazy">
+    <img data-i="hp14" src="images/orchid-headphones.webp" alt="" loading="lazy">
+    <img data-i="cm1" src="images/lilac-instant-camera.webp" alt="" loading="lazy">
+    <img data-i="cm2" src="images/cocoa-instant-camera.webp" alt="" loading="lazy">
+    <img data-i="cm3" src="images/leather-hybrid-camera.webp" alt="" loading="lazy">
+    <img data-i="cm4" src="images/rose-hybrid-camera.webp" alt="" loading="lazy">
+    <img data-i="cm5" src="images/flamingo-instant-camera.webp" alt="" loading="lazy">
+    <img data-i="cm6" src="images/pastel-blue-instant-camera.webp" alt="" loading="lazy">
+    <img data-i="cm7" src="images/white-compact-camera.webp" alt="" loading="lazy">
+    <img data-i="cm8" src="images/gold-compact-camera.webp" alt="" loading="lazy">
+    <img data-i="cm9" src="images/retro-mirrorless-camera.webp" alt="" loading="lazy">
+    <img data-i="cm10" src="images/blush-compact-camera.webp" alt="" loading="lazy">
+    <img data-i="cm11" src="images/white-kids-camera.webp" alt="" loading="lazy">
+    <img data-i="cm12" src="images/lilac-camera-with-strap.webp" alt="" loading="lazy">
+    <img data-i="cm13" src="images/mint-instant-camera.webp" alt="" loading="lazy">
+    <img data-i="cm14" src="images/cream-instant-camera.webp" alt="" loading="lazy">
+    <img data-i="wt1" src="images/blush-square-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt2" src="images/periwinkle-square-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt3" src="images/starlight-square-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt4" src="images/forest-green-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt5" src="images/plum-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt6" src="images/rose-gold-round-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt7" src="images/sky-blue-round-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt8" src="images/navy-round-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt9" src="images/lavender-fitness-band.webp" alt="" loading="lazy">
+    <img data-i="wt10" src="images/ruby-round-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt11" src="images/berry-classic-smartwatch.webp" alt="" loading="lazy">
+    <img data-i="wt12" src="images/blush-fitness-band.webp" alt="" loading="lazy">
+    <img data-i="wt13" src="images/cream-fitness-band.webp" alt="" loading="lazy">
+    <img data-i="ac1" src="images/brown-oval-sunglasses.webp" alt="" loading="lazy">
+    <img data-i="ac2" src="images/rimless-gold-sunglasses.webp" alt="" loading="lazy">
+    <img data-i="ac3" src="images/butterfly-gradient-sunglasses.webp" alt="" loading="lazy">
+    <img data-i="ac4" src="images/crystal-fringe-sunglasses.webp" alt="" loading="lazy">
+    <img data-i="ac5" src="images/crystal-tortoise-sunglasses.webp" alt="" loading="lazy">
+    <img data-i="ac6" src="images/dragonfly-wing-sunglasses.webp" alt="" loading="lazy">
+    <img data-i="ac7" src="images/flame-rimless-sunglasses.webp" alt="" loading="lazy">
+    <img data-i="ac8" src="images/royal-blue-sun-hat.webp" alt="" loading="lazy">
+    <img data-i="ac9" src="images/pink-wide-brim-hat.webp" alt="" loading="lazy">
+    <img data-i="ac10" src="images/rose-straw-hat.webp" alt="" loading="lazy">
+    <img data-i="ac11" src="images/zebra-print-head-scarf.webp" alt="" loading="lazy">
+    <img data-i="ac12" src="images/leopard-print-head-scarf.webp" alt="" loading="lazy">
+    <img data-i="ac13" src="images/silk-baroque-head-scarf.webp" alt="" loading="lazy">
+    <img data-i="ac14" src="images/pink-handheld-fan.webp" alt="" loading="lazy">
+    <img data-i="ac15" src="images/silver-handheld-fan.webp" alt="" loading="lazy">
+    <img data-i="ac16" src="images/mini-pink-power-bank.webp" alt="" loading="lazy">
+    <img data-i="ac17" src="images/blush-power-bank-22-5w.webp" alt="" loading="lazy">
+    <img data-i="ac18" src="images/sky-blue-power-bank.webp" alt="" loading="lazy">
+    <img data-i="ac19" src="images/tan-power-bank-with-cables.webp" alt="" loading="lazy">
+    <img data-i="ac20" src="images/emerald-jeweled-sunglasses.webp" alt="" loading="lazy">
+  </template>
+  <script src="script.js"></script>
+</body>
+
+</html>
